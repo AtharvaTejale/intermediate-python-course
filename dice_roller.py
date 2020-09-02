@@ -1,10 +1,13 @@
 def main():
-  roll = 5
-  print('You rolled a {roll}')
- import random
-roll = random.randint(1,6)
-if __name__== "__main__":
+ dice_rolls = 2
+dice_sum = 0
+for i in range(0,dice_rolls):
+  roll = random.randint(1,6)
+  dice_sum += roll
+  print(f'You rolled a {roll}')
+print(f'You have rolled a total of {dice_sum}'):
   main()
+
 git add dice_roller.py
-git commit -m "I uncommented line 2"
+git commit -m "Now rolling two dice"
 git push
